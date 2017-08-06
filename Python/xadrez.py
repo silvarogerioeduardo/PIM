@@ -25,9 +25,10 @@ def GeraTabuleiro(W, H, T, filename):
 	scipy.misc.imsave(filename,data)
 
 # ===========================================================================================
+filename = path + "xadrez.png"
 
-GeraTabuleiro(256, 256, 64, path+"xadrez.png")
+GeraTabuleiro(256, 256, 64, filename)
 
-resultado = scipy.misc.imread(path+"xadrez.png")
+resultado = scipy.misc.imread(filename)
 plt.imshow(resultado)
 plt.show()
